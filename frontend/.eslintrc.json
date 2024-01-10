@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "eslint:recommended", "prettier"],
+  "plugins": ["unused-imports"],
+  "globals": {
+    "JSX": "readonly"
+  },
+  "rules": {
+    "no-duplicate-case": "off",
+    "no-unused-vars": "error",
+    "no-func-assign": "error",
+    "unused-imports/no-unused-imports": "error"
+  }
 }
